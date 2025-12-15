@@ -36,25 +36,25 @@ $ unzip plink_linux_x86_64.zip
 ### Step 1- Heritability Analysis
 
 ```
-$ Rscript statistical_genetics_AS_pipeline.R
+$ Rscript AS_pipeline.R
 ```
 
 ### Step 2- Quality Control
 
 ```
-$ bash plink_qc_commands.sh
+$ bash plink_qc.sh
 ```
 
 ### Step 3- Association Testing
 
 ```
-$ bash plink_association_commands.sh
+$ bash plink_assoc.sh
 ```
 
 ### Step 4- Results Analysis
 
 ```
-$ Rscript association_analysis_pipeline.R
+$ Rscript assoc_analysis.R
 ```
 
 ## Key Findings
@@ -70,15 +70,6 @@ $ Rscript association_analysis_pipeline.R
 * SNPs tested: 15 variants from European discovery cohort
 * Statistical threshold: Bonferroni-corrected p<0.00333
 
-## Results Structure
-
-```
-results/
-├── heritability_estimates.txt
-├── association_results.assoc.logistic
-├── power_calculations.txt
-└── manhattan_plot.png
-```
 
 ## Additional Information
 
