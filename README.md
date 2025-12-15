@@ -33,37 +33,37 @@ $ unzip plink_linux_x86_64.zip
 
 ## Usage
 
-###Step 1- Heritability Analysis
+### Step 1- Heritability Analysis
 
 ```
 $ Rscript statistical_genetics_AS_pipeline.R
 ```
 
-###Step 2- Quality Control
+### Step 2- Quality Control
 
 ```
 $ bash plink_qc_commands.sh
 ```
 
-###Step 3- Association Testing
+### Step 3- Association Testing
 
 ```
 $ bash plink_association_commands.sh
 ```
 
-###Step 4- Results Analysis
+### Step 4- Results Analysis
 
 ```
 $ Rscript association_analysis_pipeline.R
 ```
 
-##Key Findings
+## Key Findings
 
 * Novel variant rs11166276 shows opposite effect in South Asians (OR=0.83) vs Europeans (OR=1.07)
 * Linked to serum phosphate levels (p=5×10⁻³⁷)
 * Demonstrates need for ancestry-specific genetic risk scores
 
-##Technical Details
+## Technical Details
 
 * Sample size: 7,000 individuals (1,100 cases, 5,900 controls)
 * Population: South Asian (Indian/Pakistani)
